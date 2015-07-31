@@ -9,10 +9,13 @@ def draw_square(arg):
 
 def draw():
     brad = turtle.Turtle()
-    draw_square(brad)
-    angie=turtle.Turtle()
-    angie.color('red')
-    angie.circle(100)
+    brad.speed(2)
+    brad.shape('turtle')
+    brad.color('red')
+    for i in range(36):
+        draw_square(brad)
+        brad.right(10)
+    
     window.exitonclick()
 
 draw()
